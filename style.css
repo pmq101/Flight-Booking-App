@@ -1,0 +1,518 @@
+.aboveSearch {
+    display: flex;
+    margin-bottom: 15px;
+    width: 900px;
+}
+
+.box2 {
+    width: 250px;
+    height: 50px;
+    margin-right: 5px;
+    background-color: #f1f4f7;
+    border: 1px solid #dbdbdb;
+    display: flex;
+}
+
+.box {
+    display: block;
+}
+
+.searchBox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 24%;
+    padding-top: 50px;
+    width: 900px;
+}
+
+.search {
+    display: flex;
+    width: 800px;
+}
+
+.search input {
+    width: 175px;
+    height: 40px;
+    border-style: none;
+    outline: none;
+    background-color: #f1f4f7;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: Futura, sans-serif;
+}
+
+.dateSearch {
+    color: grey;
+}
+
+.dateSearch:focus {
+    color: black;
+}
+
+.searchPic {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.searchPrompt {
+    font-family: Futura, sans-serif;
+    font-size: 30px;
+    color: #5d92bb;
+    margin-top: 110px;
+    margin-right: 330px;
+}
+
+.searchSubmit {
+    height: 52px;
+    width: 50px;
+    background-color: #5d92bb;
+}
+
+.searchSubmit:hover {
+    cursor: pointer;
+}
+
+.siteLogo {
+    margin-top: 45px;
+    width: 200px;
+    height: 100px;
+}
+
+.flight {
+    display: flex;
+    width: 700px;
+    height: 100px;
+    background-color: #f1f4f7;
+    margin-top: 10px;
+    margin-left: 50px;
+    border: 1px solid #dbdbdb;
+}
+
+.flight div {
+    margin-right: 10px;
+    font-family: Futura, sans-serif;
+}
+
+.info1 {
+    width: 250px;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+
+.info2 {
+    margin-right: 35px;
+    margin-top: 20px;
+    width: 140px;
+}
+
+.flightCodes {
+    margin-top: 10px;
+    color: grey;
+
+}
+
+.flightTime {
+    font-size: 25px;
+}
+
+.flightDur {
+    font-size: 25px;
+}
+
+.flightAirline {
+    margin-top: 10px;
+    color: grey;
+}
+
+.flightPic {
+    width: 100%;
+    height: auto;
+
+}
+
+.picContainer {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 45px;
+    margin: 25px 20px;
+}
+
+.bookButton {
+    margin-top: 17px;
+    width: 140px;
+    height: 50px;
+    background-color: #5d92bb;
+    color: white;
+    padding-left: 35px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.bookButton:hover {
+    cursor: pointer;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #5d92bb;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.contentBox {
+    display: flex;
+}
+
+.filterBox {
+    margin-left: 75px;
+    margin-top: 10px;
+    width: 300px;
+    font-family: Futura, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.flightsBox {
+    margin-left: 25px;
+    margin-right: 80px;
+    width: 752px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 85%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #5d92bb;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #5d92bb;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.specificAirline {
+    display: flex;
+    flex-direction: row;
+}
+
+#applyFilters {
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    margin-left: 65px;
+    background-color: #5d92bb;
+    color: white;
+    outline: none;
+    font-family: Futura, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.insideApplyFilter {
+
+}
+
+.timeBox {
+    margin-left: 15px;
+}
+
+.timeHeading {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.timeOutput {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.airlineBox {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.airHeading {
+    font-size: 20px;
+}
+
+.checkBox {
+    margin-top: 10px;
+}
+
+.airlineName {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.navBox {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.navItem {
+    margin-right: 35px;
+    font-family: Futura, sans-serif;
+    font-size: 25px;
+}
+
+.navItem:hover {
+    cursor: pointer;
+    color: #5d92bb;
+}
+
+.errorMsg {
+    width: 400px;
+    font-family: Futura, sans-serif;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+#departSuggestions {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+}
+
+#arrivalSuggestions {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+
+}
+
+.suggestion {
+    margin-top: 5px;
+    font-family: Futura, sans-serif;
+    padding-bottom: 5px;
+    font-size: 15px;
+    width: 200px;
+    margin-left: 25px;
+}
+
+.suggestion:hover {
+    cursor: pointer;
+    color: #5d92bb;
+}
+
+/* NEW STYLES HERE */
+
+.createOptions {
+    display: flex;
+    /* flex-direction: column; */
+    position: relative;
+    left: 24%;
+    padding-top: 180px;
+    width: 1000px;
+}
+
+.createOption {
+    background-color: #5d92bb;
+    color: white;
+    height: 80px;
+    width: 200px;
+    font-family: Futura, sans-serif;
+    font-size: 25px;
+    margin-right: 25px;
+    border: none;
+}
+
+.createOption:hover {
+    cursor: pointer;
+    outline: none;
+}
+
+.createForm {
+    /* display: flex; */
+    /* flex-direction: column; */
+
+    font-family: Futura, sans-serif;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+}
+
+.createBox {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 350px;
+}
+
+.createButton {
+    background-color: #5d92bb;
+    font-family: Futura, sans-serif;
+    font-size: 25px;
+    color: white;
+    width: 250px;
+    height: 75px;
+    border: none;
+}
+
+.createButton:hover {
+    cursor: pointer;
+    outline: none;
+}
+
+.createButton:focus{
+    outline: none;
+}
+
+#createMessage {
+    font-family: Futura, sans-serif;
+    font-size: 25px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.createTitle {
+    font-family: Futura, sans-serif;
+    font-size: 25px;
+    position: relative;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.createInput {
+    width: 250px;
+    height: 40px;
+    border-style: none;
+    outline: none;
+    background-color: #f1f4f7;
+    font-size: 18px;
+    padding-top: 4px;
+    padding-left: 10px;
+    font-family: Futura, sans-serif;
+    margin-top: 5px;
+}
+
+.spanInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.backButton {
+    background-color: #5d92bb;
+    width: 125px;
+    margin-top: 25px;
+    color: white;
+    display: flex;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.backButton:hover {
+    cursor: pointer;
+    outline: none;
+}
+
+.backButton div {
+    margin-top: 13px;
+    font-size: 20px;
+    font-family: Futura, sans-serif;
+}
+
+.backImg {
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.savedBox{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.savedTitle{
+    font-family: Futura, sans-serif;
+    font-size: 35px;
+    margin-left: 285px;
+}
+
+#map {
+    margin-top: 10px;
+    height: 275px;
+    width: 400px;
+}
+
+#weather {
+    position: relative;
+    left: 1280px;
+    height: 275px;
+    width: 400px;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    font-family: Futura, sans-serif;
+    font-size: 18px;
+    margin-top: -50px;
+}
+
+.weatherBox{
+    margin-right: 35px;
+}
